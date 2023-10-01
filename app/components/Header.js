@@ -14,7 +14,7 @@ const Header = () => {
                 alt='logo'
                 />
             </Link>
-            <h1>hashnode Blogs</h1>
+            <h1>NewsAPI Blogs</h1>
         </div>
 
         <div>
@@ -22,7 +22,7 @@ const Header = () => {
             target='_blank'
             href={"https://ayushisreal.hashnode.dev/newsletter"}
             className='px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center'>
-                Subscribe to my newsletter
+                <p className='transition animate-pulse'>Subscribe to my newsletter</p>
             </Link>
         </div>
     </header>
