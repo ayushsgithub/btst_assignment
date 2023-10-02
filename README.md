@@ -1,28 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BTST Technologies Blogs
+
+This project is a simple responsive blog page created using Next.js and Tailwind CSS. It displays a list of blog posts fetched dynamically from NewsAPI. The blog page includes features such as a navigation menu, responsive design, and a "Read more" button for each blog post.
+
+
+
+[Production Link](https://btst-assignment-task.vercel.app/)
+
+![Weather App Screenshot](https://github.com/ayushsgithub/btst_assignment/blob/main/public/blog-home.png?raw=true)
+
+![Weather App Screenshot](https://github.com/ayushsgithub/btst_assignment/blob/main/public/blog-page.png?raw=true)
 
 ## Getting Started
 
-First, run the development server:
+### Layout
+- Implemented a responsive layout for the blog page.
+- Created a navigation menu that links to the Home page and Blog page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Blog Posts API Integration
+- Integrated a third-party API to fetch and display blog-like data.
+- Displayed at least 5 blog posts from the API.
+- Each blog post displays the title, author, image, publication date, and content.
+- Ensured that the data from the API is displayed correctly and consistently.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Responsive Design
+- Ensured that the blog page is responsive and looks good on various screen sizes, from mobile to desktop.
+- Implemented responsive design principles using Tailwind CSS classes, including flex, grid, and responsive breakpoints.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run this project, you will need:
 
-## Learn More
+- Node.js installed on your machine.
+- npm or yarn package manager.
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```git clone https://github.com/ayushsgithub/btst_assignment.git```
+
+2. Go the folder
+
+   ```cd btst_assignment```
+
+3. Install dependencies
+
+   ```npm install```
+
+4. Get your [NewsApi](https://newsapi.org/) key and store in **.env.local**
+
+   ```API_KEY=```
+
+5. To start development server run the below command in terminal
+ 
+   ```npm run dev```
+
+- This will start a development server on **localhost:3000** in your browser
+
+
+# Contributing
+
+### Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+- Fork the repository.
+
+- Create a new branch for your feature or bug ```fix: git checkout -b feature-name```.
+
+- Make your changes and commit them.
+
+- Push your changes to your fork: ```git push origin feature-name```.
+
+- Create a pull request on the original repository.
+
+
+# To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
