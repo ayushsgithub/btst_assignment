@@ -10,7 +10,7 @@ export default async function Home() {
           Welcome to my personal blog, where I share my thoughts and experiences on various topics, including technology, travel, and lifestyle.
         </p>
         <p className="text-gray-700 mb-4">
-          Whether you're a tech enthusiast, an avid traveler, or simply looking for some inspiration, you'll find something here that interests you.
+          Whether you&apos;re a tech enthusiast, an avid traveler, or simply looking for some inspiration, you&apos;ll find something here that interests you.
         </p>
         <Link href="/blogs" className="text-orange-400 hover:underline">Explore the Blogs</Link>
       </div>
