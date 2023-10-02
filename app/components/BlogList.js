@@ -34,14 +34,6 @@ const BlogList = ({ posts }) => {
                     })}
                   </p>
                 </div>
-
-                {/* <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
-                  {post?.articles?.map((category) => (
-                    <div key={category.id} className="bg-orange-400 text-center text-black px-3 py-1 rounded-full text-sm font-semibold">
-                      <p>{category.title}</p>
-                    </div>
-                  ))}
-                </div> */}
               </div>
             </div>
 
