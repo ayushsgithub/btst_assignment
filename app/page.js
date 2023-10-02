@@ -1,15 +1,19 @@
-import BlogList from "./components/BlogList";
+import Link from "next/link";
 
 export default async function Home() {
 
-  const res = await fetch("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=c850c36c32ee410abeca0ca836f48cf5", {next: {revalidate: 3600}})
-  const posts = await res.json()
-  // console.log(posts)
-
-
   return (
-      <div>
-        <BlogList posts={posts}/>
+      <div className="bg-gray-100 md:min-h-screen flex justify-center items-center mb-2 md:mb-7 rounded-lg">
+      <div className="max-w-3xl p-6 bg-white rounded-lg shadow-xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">Welcome to My Blog</h1>
+        <p className="text-gray-700 mb-4">
+          Welcome to my personal blog, where I share my thoughts and experiences on various topics, including technology, travel, and lifestyle.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Whether you're a tech enthusiast, an avid traveler, or simply looking for some inspiration, you'll find something here that interests you.
+        </p>
+        <Link href="/blogs" className="text-orange-400 hover:underline">Explore the Blogs</Link>
       </div>
+    </div>
     )
 }
